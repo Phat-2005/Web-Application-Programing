@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flower Purchase Registration</title>
+</head>
+<body>
+    <h3>FLOWER PURCHASE REGISTRATION</h3>
+    <p style="color:red;">
+        Please fill in all required information to receive your favorite flowers or ornamental plants.
+    </p>
+
+    <form>
+        <label>Full Name: <font color="red">(*)</font></label>
+        <input type="text" name="fullname"><br><br>
+
+        <label>Address: <font color="red">(*)</font></label>
+        <input type="text" name="address"><br><br>
+
+        <label>Phone: <font color="red">(*)</font></label>
+        <input type="text" name="phone"><br><br>
+
+        <label>Email:</label>
+        <input type="text" name="email"><br><br>
+
+        <label>Flower:</label>
+        <select>
+            <option>Rose</option>
+        </select>
+        <select>
+            <option>Red</option>
+        </select><br><br>
+
+        <label>Quantity: <font color="red">(*)</font></label>
+        <input type="text" name="quantity"><br><br>
+
+        <label>Unit:</label>
+        <input type="radio" name="unit" value="branch"> Branch
+        <input type="radio" name="unit" value="pot"> Pot<br><br>
+
+        <label>Payment:</label>
+        <input type="radio" name="payment" value="cash"> Cash
+        <input type="radio" name="payment" value="bank"> Bank Transfer
+        <input type="radio" name="payment" value="card"> MasterCard<br><br>
+
+        <label>Notes:</label><br>
+        <textarea rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

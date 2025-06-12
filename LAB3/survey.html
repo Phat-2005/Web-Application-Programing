@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: normal; /* Không in đậm */
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #003366;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .buttons input {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 48%;
+      cursor: pointer;
+    }
+
+    .section {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>FEEDBACK SURVEY FORM</h2>
+  <form action="/submit_survey" method="post">
+    <label>Username:</label>
+    <input type="text" name="username" placeholder="Enter your username" required>
+
+    <div class="section">
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+
+    <div class="section">
+      <label>Topics you often care about on the Internet:</label>
+      <label><input type="checkbox" name="topics" value="news"> News</label>
+      <label><input type="checkbox" name="topics" value="entertainment"> Entertainment</label>
+      <label><input type="checkbox" name="topics" value="learning"> Learning Corner</label>
+      <label><input type="checkbox" name="topics" value="education"> Education</label>
+      <label><input type="checkbox" name="topics" value="other"> Other Topics</label>
+    </div>
+
+    <div class="buttons">
+      <input type="reset" value="Cancel">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</html>
