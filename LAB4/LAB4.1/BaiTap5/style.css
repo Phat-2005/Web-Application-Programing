@@ -1,8 +1,0 @@
-.product-gallery {
-  display: flex;
-  gap: 20px;              
-  flex-wrap: wrap;
-  background-color: #ddd;
-  padding: 30px;          
-  border-radius: 8px;
-}
