@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App with Dropdown</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #cdeef2;
+      padding: 40px;
+      text-align: center;
+    }
+    select, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    #weather {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weather App</h1>
+
+  <select id="citySelect">
+    <option value="Hanoi,VN">Hà Nội, Việt Nam</option>
+    <option value="Ho Chi Minh,VN">TP. Hồ Chí Minh, Việt Nam</option>
+    <option value="Bangkok,TH">Bangkok, Thái Lan</option>
+    <option value="Tokyo,JP">Tokyo, Nhật Bản</option>
+    <option value="London,GB">London, UK</option>
+    <option value="New York,US">New York, USA</option>
+  </select>
+
+  <button onclick="getWeather()">Get Weather</button>
+  <div id="weather"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
