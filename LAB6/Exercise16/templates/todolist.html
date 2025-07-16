@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f7f7f7;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <form method="POST">
+        <input type="text" name="task" placeholder="New task..." required>
+        <button type="submit">Add</button>
+    </form>
+
+    <ul>
+        {% for task in tasks %}
+        <li>
+    <span class="{{ 'completed' if task.completed else '' }}">
+        {{ task.task }}
+    </span>
+    - <small>{{ 'Completed' if task.completed else 'Not completed' }}</small>
+    <a href="{{ url_for('toggle', task_id=loop.index0) }}">
+        <button>{{ 'Undo' if task.completed else 'Complete' }}</button>
+    </a>
+</li>
+{% endfor %}
+    </ul>
+</body>
+</html>
