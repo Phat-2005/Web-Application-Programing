@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Exercise 6 - Exact Name Search</title></head>
+<body>
+  <h2>Search Student by Exact Name</h2>
+  <form method="GET">
+    <input type="text" name="name" placeholder="Enter full name">
+    <button type="submit">Search</button>
+  </form>
+  <ul>
+    {% for student in students %}
+      <li>{{ student.name }} - {{ student.age }} - {{ student.gender }} - {{ student.major }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/">Back to Home</a>
+</body>
+</html>

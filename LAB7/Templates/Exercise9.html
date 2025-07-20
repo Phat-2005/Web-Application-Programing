@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Exercise 9 - Count Students by Major</title></head>
+<body>
+  <h2>Number of Students per Major</h2>
+  <ul>
+    {% for item in results %}
+      <li>{{ item._id }}: {{ item.count }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/">Back to Home</a>
+</body>
+</html>

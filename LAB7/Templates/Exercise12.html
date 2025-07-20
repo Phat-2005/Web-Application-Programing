@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Exercise 12 - Academic Ranking</title></head>
+<body>
+  <h2>Students with Academic Rank</h2>
+  <ul>
+    {% for student in students %}
+      <li>{{ student.name }} - GPA: {{ student.gpa }} - Rank: {{ student.rank }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/">Back to Home</a>
+</body>
+</html>
+

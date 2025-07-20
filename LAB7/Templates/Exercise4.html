@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 4 - Edit Student</title>
+</head>
+<body>
+    <h2>Edit Student Information</h2>
+    <form method="POST">
+        <label>Name:
+            <input type="text" name="name" value="{{ student.name }}">
+        </label><br>
+        <label>Age:
+            <input type="number" name="age" value="{{ student.age }}">
+        </label><br>
+        <label>Gender:
+            <input type="text" name="gender" value="{{ student.gender }}">
+        </label><br>
+        <label>Major:
+            <input type="text" name="major" value="{{ student.major }}">
+        </label><br>
+        <button type="submit">Save</button>
+    </form>
+    <a href="/exercise3">Back to Student List</a>
+</body>
+</html>

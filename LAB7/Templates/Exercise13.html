@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Exercise 13 - Excellent Students</title></head>
+<body>
+  <h2>Excellent Students (GPA ≥ 8.0)</h2>
+  <ul>
+    {% for student in students %}
+      <li>{{ student.name }} - GPA: {{ student.gpa }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/">Back to Home</a>
+</body>
+</html>

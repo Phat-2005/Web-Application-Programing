@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Exercise 16 - Filter by Gender</title></head>
+<body>
+  <h2>Filter Students by Gender</h2>
+  <form method="GET">
+    <select name="gender">
+      <option value="">-- Select Gender --</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    <button type="submit">Filter</button>
+  </form>
+  <ul>
+    {% for student in students %}
+      <li>{{ student.name }} - Gender: {{ student.gender }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/">Back to Home</a>
+</body>
+</html>

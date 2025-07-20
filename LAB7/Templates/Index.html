@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flask MongoDB Lab Index</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='Style.css') }}">
+</head>
+<body>
+  <h1>MongoDB + Flask Lab Index</h1>
+  <ul>
+    {% for i in range(1, 17) %}
+      <li><a href="/exercise{{ i }}">Exercise {{ i }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

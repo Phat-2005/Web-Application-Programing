@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Exercise 15 - Filter by Age</title></head>
+<body>
+  <h2>Filter Students by Age Range</h2>
+  <form method="GET">
+    <label>Min Age: <input type="number" name="min_age"></label>
+    <label>Max Age: <input type="number" name="max_age"></label>
+    <button type="submit">Filter</button>
+  </form>
+  <ul>
+    {% for student in students %}
+      <li>{{ student.name }} - {{ student.age }} years old</li>
+    {% endfor %}
+  </ul>
+  <a href="/">Back to Home</a>
+</body>
+</html>

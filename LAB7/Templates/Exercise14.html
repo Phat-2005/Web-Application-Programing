@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Exercise 14 - Top GPA Student</title></head>
+<body>
+  <h2>Top Scoring Student</h2>
+  {% if student %}
+    <p>{{ student.name }} - GPA: {{ student.gpa }}</p>
+  {% else %}
+    <p>No student found.</p>
+  {% endif %}
+  <a href="/">Back to Home</a>
+</body>
+</html>
