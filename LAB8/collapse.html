@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collapse and Tabs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container py-5">
+
+    <!-- Collapse Section -->
+    <h3 class="mb-3">Collapse Example</h3>
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseText" aria-expanded="false" aria-controls="collapseText">
+            Toggle Text
+        </button>
+    </p>
+    <div class="collapse" id="collapseText">
+        <div class="card card-body">
+            This is some hidden text. Click the button again to hide it.
+        </div>
+    </div>
+
+    <!-- Tabs Section -->
+    <h3 class="mt-5 mb-3">Tabs Example</h3>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab">Settings</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#history" type="button" role="tab">History</button>
+        </li>
+    </ul>
+
+    <div class="tab-content mt-3" id="myTabContent">
+        <div class="tab-pane fade show active" id="profile" role="tabpanel">
+            <p>This is the Profile tab content. You can write about the user here.</p>
+        </div>
+        <div class="tab-pane fade" id="settings" role="tabpanel">
+            <p>This is the Settings tab. You can change your preferences here.</p>
+        </div>
+        <div class="tab-pane fade" id="history" role="tabpanel">
+            <p>This is the History tab. It displays previous activity.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
